@@ -1,0 +1,1154 @@
+{
+  "castle": [
+    {
+      "id": "pikeman", "name": "Pikeman", "upgraded": "halberdier",
+      "tier": 1, "faction": "castle",
+      "attack": 4, "defense": 5, "min_damage": 1, "max_damage": 3,
+      "hp": 10, "speed": 4, "initiative": 10, "growth": 14, "ai_value": 80,
+      "cost": {"gold": 60}, "abilities": ["no_enemy_retaliation_bonus"],
+      "description": "Stalwart defenders of the Castle, armed with long pikes.",
+      "color": [200, 190, 160]
+    },
+    {
+      "id": "halberdier", "name": "Halberdier", "upgraded": null,
+      "tier": 1, "faction": "castle",
+      "attack": 6, "defense": 5, "min_damage": 2, "max_damage": 3,
+      "hp": 10, "speed": 5, "initiative": 10, "growth": 14, "ai_value": 116,
+      "cost": {"gold": 75}, "abilities": ["two_hexes_attack"],
+      "description": "Upgraded pikemen with superior reach and training.",
+      "color": [210, 200, 170]
+    },
+    {
+      "id": "archer", "name": "Archer", "upgraded": "marksman",
+      "tier": 2, "faction": "castle",
+      "attack": 6, "defense": 3, "min_damage": 2, "max_damage": 3,
+      "hp": 10, "speed": 4, "initiative": 12, "growth": 9, "ai_value": 126,
+      "cost": {"gold": 100}, "abilities": ["ranged"],
+      "description": "Skilled bowmen of the Castle.",
+      "color": [160, 140, 100]
+    },
+    {
+      "id": "marksman", "name": "Marksman", "upgraded": null,
+      "tier": 2, "faction": "castle",
+      "attack": 6, "defense": 3, "min_damage": 2, "max_damage": 3,
+      "hp": 10, "speed": 6, "initiative": 12, "growth": 9, "ai_value": 184,
+      "cost": {"gold": 150}, "abilities": ["ranged", "double_shot"],
+      "description": "Elite archers who can fire twice per turn.",
+      "color": [170, 150, 110]
+    },
+    {
+      "id": "griffin", "name": "Griffin", "upgraded": "royal_griffin",
+      "tier": 3, "faction": "castle",
+      "attack": 8, "defense": 8, "min_damage": 3, "max_damage": 6,
+      "hp": 25, "speed": 6, "initiative": 12, "growth": 6, "ai_value": 351,
+      "cost": {"gold": 200}, "abilities": ["flying", "unlimited_retaliation"],
+      "description": "Majestic flying creatures with unlimited retaliation.",
+      "color": [200, 170, 100]
+    },
+    {
+      "id": "royal_griffin", "name": "Royal Griffin", "upgraded": null,
+      "tier": 3, "faction": "castle",
+      "attack": 9, "defense": 9, "min_damage": 3, "max_damage": 6,
+      "hp": 30, "speed": 9, "initiative": 12, "growth": 6, "ai_value": 448,
+      "cost": {"gold": 240}, "abilities": ["flying", "unlimited_retaliation", "battle_dive"],
+      "description": "The pinnacle of griffin kind.",
+      "color": [220, 190, 120]
+    },
+    {
+      "id": "swordsman", "name": "Swordsman", "upgraded": "crusader",
+      "tier": 4, "faction": "castle",
+      "attack": 10, "defense": 10, "min_damage": 6, "max_damage": 9,
+      "hp": 35, "speed": 5, "initiative": 11, "growth": 4, "ai_value": 445,
+      "cost": {"gold": 300}, "abilities": ["no_enemy_retaliation_melee"],
+      "description": "Elite swordsmen of the Castle.",
+      "color": [180, 170, 140]
+    },
+    {
+      "id": "crusader", "name": "Crusader", "upgraded": null,
+      "tier": 4, "faction": "castle",
+      "attack": 12, "defense": 12, "min_damage": 6, "max_damage": 9,
+      "hp": 40, "speed": 6, "initiative": 11, "growth": 4, "ai_value": 588,
+      "cost": {"gold": 400}, "abilities": ["double_strike"],
+      "description": "Holy warriors with double attack.",
+      "color": [210, 200, 160]
+    },
+    {
+      "id": "monk", "name": "Monk", "upgraded": "zealot",
+      "tier": 5, "faction": "castle",
+      "attack": 12, "defense": 7, "min_damage": 10, "max_damage": 12,
+      "hp": 30, "speed": 5, "initiative": 12, "growth": 3, "ai_value": 485,
+      "cost": {"gold": 400}, "abilities": ["ranged"],
+      "description": "Holy monks who attack with divine fire.",
+      "color": [220, 180, 100]
+    },
+    {
+      "id": "zealot", "name": "Zealot", "upgraded": null,
+      "tier": 5, "faction": "castle",
+      "attack": 12, "defense": 10, "min_damage": 10, "max_damage": 12,
+      "hp": 30, "speed": 7, "initiative": 12, "growth": 3, "ai_value": 633,
+      "cost": {"gold": 500}, "abilities": ["ranged", "no_range_penalty"],
+      "description": "Fanatical zealots without range penalty.",
+      "color": [240, 200, 120]
+    },
+    {
+      "id": "cavalier", "name": "Cavalier", "upgraded": "champion",
+      "tier": 6, "faction": "castle",
+      "attack": 15, "defense": 15, "min_damage": 15, "max_damage": 25,
+      "hp": 100, "speed": 7, "initiative": 11, "growth": 2, "ai_value": 1946,
+      "cost": {"gold": 1000, "mercury": 1}, "abilities": ["jousting"],
+      "description": "Powerful cavalry with jousting bonus.",
+      "color": [180, 160, 120]
+    },
+    {
+      "id": "champion", "name": "Champion", "upgraded": null,
+      "tier": 6, "faction": "castle",
+      "attack": 16, "defense": 16, "min_damage": 15, "max_damage": 25,
+      "hp": 120, "speed": 9, "initiative": 11, "growth": 2, "ai_value": 2321,
+      "cost": {"gold": 1200, "mercury": 1}, "abilities": ["jousting_bonus"],
+      "description": "The most powerful cavalry in the realm.",
+      "color": [200, 180, 140]
+    },
+    {
+      "id": "angel", "name": "Angel", "upgraded": "archangel",
+      "tier": 7, "faction": "castle",
+      "attack": 20, "defense": 20, "min_damage": 25, "max_damage": 50,
+      "hp": 200, "speed": 12, "initiative": 18, "growth": 1, "ai_value": 5019,
+      "cost": {"gold": 3000, "gems": 1}, "abilities": ["flying", "raise_dead"],
+      "description": "Divine celestial beings.",
+      "color": [255, 250, 220]
+    },
+    {
+      "id": "archangel", "name": "Archangel", "upgraded": null,
+      "tier": 7, "faction": "castle",
+      "attack": 30, "defense": 30, "min_damage": 30, "max_damage": 60,
+      "hp": 250, "speed": 18, "initiative": 21, "growth": 1, "ai_value": 10000,
+      "cost": {"gold": 5000, "gems": 3}, "abilities": ["flying", "raise_dead", "resurrect"],
+      "description": "The mightiest of all angels.",
+      "color": [255, 255, 240]
+    }
+  ],
+  "rampart": [
+    {
+      "id": "centaur", "name": "Centaur", "upgraded": "centaur_captain",
+      "tier": 1, "faction": "rampart",
+      "attack": 5, "defense": 3, "min_damage": 2, "max_damage": 3,
+      "hp": 8, "speed": 6, "initiative": 9, "growth": 14, "ai_value": 100,
+      "cost": {"gold": 60}, "abilities": ["ranged"],
+      "description": "Swift centaur archers of the forest.",
+      "color": [180, 140, 80]
+    },
+    {
+      "id": "centaur_captain", "name": "Centaur Captain", "upgraded": null,
+      "tier": 1, "faction": "rampart",
+      "attack": 6, "defense": 4, "min_damage": 2, "max_damage": 3,
+      "hp": 10, "speed": 8, "initiative": 9, "growth": 14, "ai_value": 138,
+      "cost": {"gold": 80}, "abilities": ["ranged"],
+      "description": "Elite centaur captains.",
+      "color": [200, 160, 100]
+    },
+    {
+      "id": "dwarf", "name": "Dwarf", "upgraded": "battle_dwarf",
+      "tier": 2, "faction": "rampart",
+      "attack": 6, "defense": 7, "min_damage": 2, "max_damage": 4,
+      "hp": 20, "speed": 4, "initiative": 9, "growth": 9, "ai_value": 138,
+      "cost": {"gold": 100}, "abilities": ["magic_resistance"],
+      "description": "Stalwart dwarves with magic resistance.",
+      "color": [140, 120, 80]
+    },
+    {
+      "id": "battle_dwarf", "name": "Battle Dwarf", "upgraded": null,
+      "tier": 2, "faction": "rampart",
+      "attack": 7, "defense": 7, "min_damage": 2, "max_damage": 4,
+      "hp": 20, "speed": 5, "initiative": 9, "growth": 9, "ai_value": 209,
+      "cost": {"gold": 130}, "abilities": ["magic_resistance", "aura_magic_resistance"],
+      "description": "Elite battle dwarves radiating magic resistance.",
+      "color": [160, 140, 100]
+    },
+    {
+      "id": "wood_elf", "name": "Wood Elf", "upgraded": "grand_elf",
+      "tier": 3, "faction": "rampart",
+      "attack": 9, "defense": 5, "min_damage": 3, "max_damage": 5,
+      "hp": 15, "speed": 6, "initiative": 12, "growth": 6, "ai_value": 234,
+      "cost": {"gold": 200}, "abilities": ["ranged", "no_obstacle_penalty"],
+      "description": "Swift elven archers of the ancient woods.",
+      "color": [80, 160, 80]
+    },
+    {
+      "id": "grand_elf", "name": "Grand Elf", "upgraded": null,
+      "tier": 3, "faction": "rampart",
+      "attack": 9, "defense": 5, "min_damage": 3, "max_damage": 5,
+      "hp": 15, "speed": 9, "initiative": 12, "growth": 6, "ai_value": 336,
+      "cost": {"gold": 250}, "abilities": ["ranged", "no_obstacle_penalty", "double_shot"],
+      "description": "Master elven archers with double shot.",
+      "color": [100, 190, 100]
+    },
+    {
+      "id": "pegasus", "name": "Pegasus", "upgraded": "silver_pegasus",
+      "tier": 4, "faction": "rampart",
+      "attack": 11, "defense": 9, "min_damage": 5, "max_damage": 9,
+      "hp": 35, "speed": 8, "initiative": 12, "growth": 4, "ai_value": 518,
+      "cost": {"gold": 300}, "abilities": ["flying", "anti_magic_aura"],
+      "description": "Winged horses with anti-magic aura.",
+      "color": [220, 220, 255]
+    },
+    {
+      "id": "silver_pegasus", "name": "Silver Pegasus", "upgraded": null,
+      "tier": 4, "faction": "rampart",
+      "attack": 13, "defense": 11, "min_damage": 5, "max_damage": 9,
+      "hp": 40, "speed": 12, "initiative": 12, "growth": 4, "ai_value": 680,
+      "cost": {"gold": 400}, "abilities": ["flying", "anti_magic_aura_strong"],
+      "description": "Radiant silver pegasi.",
+      "color": [230, 230, 255]
+    },
+    {
+      "id": "dendroid_guard", "name": "Dendroid Guard", "upgraded": "dendroid_soldier",
+      "tier": 5, "faction": "rampart",
+      "attack": 9, "defense": 12, "min_damage": 10, "max_damage": 14,
+      "hp": 55, "speed": 3, "initiative": 8, "growth": 3, "ai_value": 517,
+      "cost": {"gold": 350}, "abilities": ["binding_attack"],
+      "description": "Living trees that bind enemies.",
+      "color": [80, 100, 60]
+    },
+    {
+      "id": "dendroid_soldier", "name": "Dendroid Soldier", "upgraded": null,
+      "tier": 5, "faction": "rampart",
+      "attack": 12, "defense": 12, "min_damage": 10, "max_damage": 14,
+      "hp": 65, "speed": 4, "initiative": 8, "growth": 3, "ai_value": 699,
+      "cost": {"gold": 500}, "abilities": ["binding_attack_strong"],
+      "description": "Powerful dendroid soldiers.",
+      "color": [60, 120, 50]
+    },
+    {
+      "id": "unicorn", "name": "Unicorn", "upgraded": "war_unicorn",
+      "tier": 6, "faction": "rampart",
+      "attack": 15, "defense": 15, "min_damage": 15, "max_damage": 25,
+      "hp": 100, "speed": 8, "initiative": 11, "growth": 2, "ai_value": 1806,
+      "cost": {"gold": 900}, "abilities": ["aura_magic_resistance", "blind_attack"],
+      "description": "Majestic unicorns with blinding attacks.",
+      "color": [240, 230, 255]
+    },
+    {
+      "id": "war_unicorn", "name": "War Unicorn", "upgraded": null,
+      "tier": 6, "faction": "rampart",
+      "attack": 15, "defense": 15, "min_damage": 15, "max_damage": 25,
+      "hp": 115, "speed": 10, "initiative": 11, "growth": 2, "ai_value": 2030,
+      "cost": {"gold": 1100, "gems": 1}, "abilities": ["aura_magic_resistance", "blind_attack_strong"],
+      "description": "War unicorns trained for battle.",
+      "color": [250, 240, 255]
+    },
+    {
+      "id": "green_dragon", "name": "Green Dragon", "upgraded": "gold_dragon",
+      "tier": 7, "faction": "rampart",
+      "attack": 18, "defense": 18, "min_damage": 30, "max_damage": 50,
+      "hp": 160, "speed": 13, "initiative": 17, "growth": 1, "ai_value": 5765,
+      "cost": {"gold": 3000, "sulfur": 1}, "abilities": ["flying", "breath_attack", "immune_to_mind"],
+      "description": "Ancient green dragons.",
+      "color": [60, 160, 60]
+    },
+    {
+      "id": "gold_dragon", "name": "Gold Dragon", "upgraded": null,
+      "tier": 7, "faction": "rampart",
+      "attack": 27, "defense": 27, "min_damage": 35, "max_damage": 55,
+      "hp": 250, "speed": 17, "initiative": 19, "growth": 1, "ai_value": 11490,
+      "cost": {"gold": 5000, "sulfur": 2}, "abilities": ["flying", "breath_attack", "immune_to_magic_4"],
+      "description": "Glorious gold dragons.",
+      "color": [220, 180, 40]
+    }
+  ],
+  "tower": [
+    {
+      "id": "gremlin", "name": "Gremlin", "upgraded": "master_gremlin",
+      "tier": 1, "faction": "tower",
+      "attack": 3, "defense": 3, "min_damage": 1, "max_damage": 2,
+      "hp": 4, "speed": 4, "initiative": 9, "growth": 16, "ai_value": 44,
+      "cost": {"gold": 30}, "abilities": ["ranged"],
+      "description": "Tiny mechanical beings.",
+      "color": [100, 120, 140]
+    },
+    {
+      "id": "master_gremlin", "name": "Master Gremlin", "upgraded": null,
+      "tier": 1, "faction": "tower",
+      "attack": 4, "defense": 4, "min_damage": 1, "max_damage": 3,
+      "hp": 6, "speed": 6, "initiative": 9, "growth": 16, "ai_value": 84,
+      "cost": {"gold": 50}, "abilities": ["ranged", "repair_siege"],
+      "description": "Master gremlins who can repair siege weapons.",
+      "color": [120, 140, 160]
+    },
+    {
+      "id": "stone_gargoyle", "name": "Stone Gargoyle", "upgraded": "obsidian_gargoyle",
+      "tier": 2, "faction": "tower",
+      "attack": 6, "defense": 6, "min_damage": 3, "max_damage": 5,
+      "hp": 16, "speed": 6, "initiative": 10, "growth": 9, "ai_value": 165,
+      "cost": {"gold": 110}, "abilities": ["flying", "no_morale"],
+      "description": "Stone gargoyles animated by magic.",
+      "color": [140, 140, 140]
+    },
+    {
+      "id": "obsidian_gargoyle", "name": "Obsidian Gargoyle", "upgraded": null,
+      "tier": 2, "faction": "tower",
+      "attack": 8, "defense": 8, "min_damage": 3, "max_damage": 5,
+      "hp": 16, "speed": 9, "initiative": 10, "growth": 9, "ai_value": 201,
+      "cost": {"gold": 150}, "abilities": ["flying", "no_morale", "magic_mirror"],
+      "description": "Dark obsidian gargoyles with spell reflection.",
+      "color": [60, 60, 80]
+    },
+    {
+      "id": "stone_golem", "name": "Stone Golem", "upgraded": "iron_golem",
+      "tier": 3, "faction": "tower",
+      "attack": 7, "defense": 10, "min_damage": 5, "max_damage": 7,
+      "hp": 35, "speed": 3, "initiative": 8, "growth": 6, "ai_value": 250,
+      "cost": {"gold": 150}, "abilities": ["no_morale", "75pct_spell_damage"],
+      "description": "Massive stone golems resistant to magic.",
+      "color": [160, 150, 130]
+    },
+    {
+      "id": "iron_golem", "name": "Iron Golem", "upgraded": null,
+      "tier": 3, "faction": "tower",
+      "attack": 10, "defense": 10, "min_damage": 5, "max_damage": 8,
+      "hp": 35, "speed": 5, "initiative": 8, "growth": 6, "ai_value": 350,
+      "cost": {"gold": 220}, "abilities": ["no_morale", "50pct_spell_damage"],
+      "description": "Iron golems with superior magic resistance.",
+      "color": [120, 130, 140]
+    },
+    {
+      "id": "mage", "name": "Mage", "upgraded": "arch_mage",
+      "tier": 4, "faction": "tower",
+      "attack": 11, "defense": 8, "min_damage": 7, "max_damage": 9,
+      "hp": 25, "speed": 5, "initiative": 12, "growth": 4, "ai_value": 480,
+      "cost": {"gold": 330}, "abilities": ["ranged", "no_melee_penalty"],
+      "description": "Powerful mages who shoot magical energy.",
+      "color": [100, 100, 200]
+    },
+    {
+      "id": "arch_mage", "name": "Arch Mage", "upgraded": null,
+      "tier": 4, "faction": "tower",
+      "attack": 12, "defense": 9, "min_damage": 7, "max_damage": 9,
+      "hp": 25, "speed": 7, "initiative": 12, "growth": 4, "ai_value": 600,
+      "cost": {"gold": 400}, "abilities": ["ranged", "no_melee_penalty", "no_obstacle_penalty"],
+      "description": "Arch mages with perfect aim.",
+      "color": [140, 140, 220]
+    },
+    {
+      "id": "genie", "name": "Genie", "upgraded": "master_genie",
+      "tier": 5, "faction": "tower",
+      "attack": 10, "defense": 10, "min_damage": 20, "max_damage": 30,
+      "hp": 50, "speed": 8, "initiative": 13, "growth": 3, "ai_value": 884,
+      "cost": {"gold": 550, "gems": 1}, "abilities": ["flying", "halve_enemy_attack"],
+      "description": "Magical genies that can halve enemy attack.",
+      "color": [180, 160, 240]
+    },
+    {
+      "id": "master_genie", "name": "Master Genie", "upgraded": null,
+      "tier": 5, "faction": "tower",
+      "attack": 12, "defense": 12, "min_damage": 20, "max_damage": 30,
+      "hp": 60, "speed": 12, "initiative": 13, "growth": 3, "ai_value": 1113,
+      "cost": {"gold": 700, "gems": 1}, "abilities": ["flying", "cast_random_spell"],
+      "description": "Master genies who cast random spells.",
+      "color": [200, 180, 255]
+    },
+    {
+      "id": "naga", "name": "Naga", "upgraded": "naga_queen",
+      "tier": 6, "faction": "tower",
+      "attack": 16, "defense": 13, "min_damage": 20, "max_damage": 30,
+      "hp": 100, "speed": 6, "initiative": 12, "growth": 2, "ai_value": 2354,
+      "cost": {"gold": 1500}, "abilities": ["no_enemy_retaliation"],
+      "description": "Serpentine warriors who never face retaliation.",
+      "color": [80, 160, 120]
+    },
+    {
+      "id": "naga_queen", "name": "Naga Queen", "upgraded": null,
+      "tier": 6, "faction": "tower",
+      "attack": 16, "defense": 13, "min_damage": 20, "max_damage": 30,
+      "hp": 120, "speed": 8, "initiative": 12, "growth": 2, "ai_value": 2860,
+      "cost": {"gold": 1800, "gems": 1}, "abilities": ["no_enemy_retaliation", "luck_aura"],
+      "description": "Naga queens who bless their allies.",
+      "color": [100, 180, 140]
+    },
+    {
+      "id": "giant", "name": "Giant", "upgraded": "titan",
+      "tier": 7, "faction": "tower",
+      "attack": 21, "defense": 21, "min_damage": 30, "max_damage": 50,
+      "hp": 200, "speed": 6, "initiative": 13, "growth": 1, "ai_value": 5765,
+      "cost": {"gold": 2500}, "abilities": ["immune_to_mind"],
+      "description": "Titanic giants.",
+      "color": [200, 180, 160]
+    },
+    {
+      "id": "titan", "name": "Titan", "upgraded": null,
+      "tier": 7, "faction": "tower",
+      "attack": 24, "defense": 24, "min_damage": 30, "max_damage": 60,
+      "hp": 300, "speed": 7, "initiative": 16, "growth": 1, "ai_value": 11490,
+      "cost": {"gold": 5000, "gems": 1}, "abilities": ["ranged", "immune_to_mind", "no_melee_penalty"],
+      "description": "The mightiest of all tower creatures.",
+      "color": [220, 200, 180]
+    }
+  ],
+  "inferno": [
+    {
+      "id": "imp", "name": "Imp", "upgraded": "familiar",
+      "tier": 1, "faction": "inferno",
+      "attack": 2, "defense": 3, "min_damage": 1, "max_damage": 3,
+      "hp": 4, "speed": 5, "initiative": 16, "growth": 20, "ai_value": 50,
+      "cost": {"gold": 40}, "abilities": ["no_morale"],
+      "description": "Tiny demonic imps.",
+      "color": [180, 80, 80]
+    },
+    {
+      "id": "familiar", "name": "Familiar", "upgraded": null,
+      "tier": 1, "faction": "inferno",
+      "attack": 4, "defense": 4, "min_damage": 1, "max_damage": 3,
+      "hp": 5, "speed": 7, "initiative": 16, "growth": 20, "ai_value": 60,
+      "cost": {"gold": 50}, "abilities": ["no_morale", "mana_drain"],
+      "description": "Demonic familiars who drain mana.",
+      "color": [200, 100, 100]
+    },
+    {
+      "id": "gog", "name": "Gog", "upgraded": "magog",
+      "tier": 2, "faction": "inferno",
+      "attack": 6, "defense": 4, "min_damage": 2, "max_damage": 5,
+      "hp": 13, "speed": 5, "initiative": 10, "growth": 11, "ai_value": 159,
+      "cost": {"gold": 125}, "abilities": ["ranged", "no_morale"],
+      "description": "Fire-throwing gogs.",
+      "color": [200, 120, 60]
+    },
+    {
+      "id": "magog", "name": "Magog", "upgraded": null,
+      "tier": 2, "faction": "inferno",
+      "attack": 7, "defense": 5, "min_damage": 2, "max_damage": 5,
+      "hp": 13, "speed": 6, "initiative": 10, "growth": 11, "ai_value": 215,
+      "cost": {"gold": 175}, "abilities": ["ranged", "no_morale", "fireball_shot"],
+      "description": "Magogs who shoot explosive fireballs.",
+      "color": [220, 140, 80]
+    },
+    {
+      "id": "hell_hound", "name": "Hell Hound", "upgraded": "cerberus",
+      "tier": 3, "faction": "inferno",
+      "attack": 9, "defense": 5, "min_damage": 4, "max_damage": 6,
+      "hp": 25, "speed": 7, "initiative": 12, "growth": 7, "ai_value": 334,
+      "cost": {"gold": 200}, "abilities": ["no_morale", "no_enemy_retaliation"],
+      "description": "Vicious hell hounds.",
+      "color": [160, 80, 60]
+    },
+    {
+      "id": "cerberus", "name": "Cerberus", "upgraded": null,
+      "tier": 3, "faction": "inferno",
+      "attack": 10, "defense": 6, "min_damage": 4, "max_damage": 6,
+      "hp": 25, "speed": 9, "initiative": 12, "growth": 7, "ai_value": 392,
+      "cost": {"gold": 250}, "abilities": ["no_morale", "no_enemy_retaliation", "three_headed_attack"],
+      "description": "Three-headed cerberus dogs.",
+      "color": [180, 100, 80]
+    },
+    {
+      "id": "demon", "name": "Demon", "upgraded": "horned_demon",
+      "tier": 4, "faction": "inferno",
+      "attack": 9, "defense": 6, "min_damage": 5, "max_damage": 7,
+      "hp": 35, "speed": 5, "initiative": 10, "growth": 4, "ai_value": 445,
+      "cost": {"gold": 350}, "abilities": ["no_morale"],
+      "description": "Horned demons of the infernal pit.",
+      "color": [200, 60, 60]
+    },
+    {
+      "id": "horned_demon", "name": "Horned Demon", "upgraded": null,
+      "tier": 4, "faction": "inferno",
+      "attack": 11, "defense": 8, "min_damage": 5, "max_damage": 7,
+      "hp": 45, "speed": 6, "initiative": 10, "growth": 4, "ai_value": 576,
+      "cost": {"gold": 450}, "abilities": ["no_morale", "battle_gates"],
+      "description": "Powerful horned demons.",
+      "color": [220, 80, 80]
+    },
+    {
+      "id": "pit_fiend", "name": "Pit Fiend", "upgraded": "pit_lord",
+      "tier": 5, "faction": "inferno",
+      "attack": 13, "defense": 13, "min_damage": 10, "max_damage": 20,
+      "hp": 50, "speed": 7, "initiative": 11, "growth": 3, "ai_value": 1248,
+      "cost": {"gold": 800}, "abilities": ["no_morale", "summon_demons"],
+      "description": "Pit fiends who summon demons from fallen enemies.",
+      "color": [160, 60, 120]
+    },
+    {
+      "id": "pit_lord", "name": "Pit Lord", "upgraded": null,
+      "tier": 5, "faction": "inferno",
+      "attack": 15, "defense": 15, "min_damage": 10, "max_damage": 20,
+      "hp": 60, "speed": 9, "initiative": 11, "growth": 3, "ai_value": 1669,
+      "cost": {"gold": 1000, "sulfur": 1}, "abilities": ["no_morale", "summon_demons_strong"],
+      "description": "Mighty pit lords.",
+      "color": [180, 80, 140]
+    },
+    {
+      "id": "efreet", "name": "Efreet", "upgraded": "efreet_sultan",
+      "tier": 6, "faction": "inferno",
+      "attack": 16, "defense": 14, "min_damage": 16, "max_damage": 24,
+      "hp": 90, "speed": 11, "initiative": 14, "growth": 2, "ai_value": 2046,
+      "cost": {"gold": 1500, "mercury": 1}, "abilities": ["flying", "no_morale", "fire_shield"],
+      "description": "Burning efreeti genies.",
+      "color": [240, 120, 40]
+    },
+    {
+      "id": "efreet_sultan", "name": "Efreet Sultan", "upgraded": null,
+      "tier": 6, "faction": "inferno",
+      "attack": 16, "defense": 16, "min_damage": 16, "max_damage": 24,
+      "hp": 100, "speed": 14, "initiative": 14, "growth": 2, "ai_value": 2321,
+      "cost": {"gold": 2000, "mercury": 1}, "abilities": ["flying", "no_morale", "fire_shield_strong", "immune_fire"],
+      "description": "Efreet sultans immune to fire.",
+      "color": [255, 140, 60]
+    },
+    {
+      "id": "devil", "name": "Devil", "upgraded": "arch_devil",
+      "tier": 7, "faction": "inferno",
+      "attack": 22, "defense": 22, "min_damage": 30, "max_damage": 40,
+      "hp": 150, "speed": 17, "initiative": 20, "growth": 1, "ai_value": 5765,
+      "cost": {"gold": 3000, "mercury": 1}, "abilities": ["flying", "no_morale", "no_enemy_retaliation", "luck_penalty"],
+      "description": "Dark devils who negate enemy luck.",
+      "color": [160, 40, 40]
+    },
+    {
+      "id": "arch_devil", "name": "Arch Devil", "upgraded": null,
+      "tier": 7, "faction": "inferno",
+      "attack": 25, "defense": 25, "min_damage": 30, "max_damage": 50,
+      "hp": 200, "speed": 22, "initiative": 23, "growth": 1, "ai_value": 9667,
+      "cost": {"gold": 5000, "mercury": 2}, "abilities": ["flying", "no_morale", "no_enemy_retaliation", "luck_penalty_strong"],
+      "description": "The most fearsome arch devils.",
+      "color": [200, 60, 60]
+    }
+  ],
+  "necropolis": [
+    {
+      "id": "skeleton", "name": "Skeleton", "upgraded": "skeleton_warrior",
+      "tier": 1, "faction": "necropolis",
+      "attack": 5, "defense": 4, "min_damage": 1, "max_damage": 3,
+      "hp": 6, "speed": 4, "initiative": 9, "growth": 20, "ai_value": 60,
+      "cost": {"gold": 60}, "abilities": ["undead", "no_morale"],
+      "description": "Animated skeletons.",
+      "color": [200, 200, 180]
+    },
+    {
+      "id": "skeleton_warrior", "name": "Skeleton Warrior", "upgraded": null,
+      "tier": 1, "faction": "necropolis",
+      "attack": 6, "defense": 6, "min_damage": 1, "max_damage": 3,
+      "hp": 6, "speed": 5, "initiative": 9, "growth": 20, "ai_value": 85,
+      "cost": {"gold": 85}, "abilities": ["undead", "no_morale", "shield_parry"],
+      "description": "Skeleton warriors with shields.",
+      "color": [210, 210, 190]
+    },
+    {
+      "id": "walking_dead", "name": "Walking Dead", "upgraded": "zombie",
+      "tier": 2, "faction": "necropolis",
+      "attack": 5, "defense": 5, "min_damage": 2, "max_damage": 3,
+      "hp": 15, "speed": 3, "initiative": 8, "growth": 11, "ai_value": 98,
+      "cost": {"gold": 70}, "abilities": ["undead", "no_morale", "disease"],
+      "description": "Shambling zombies that spread disease.",
+      "color": [150, 170, 130]
+    },
+    {
+      "id": "zombie", "name": "Zombie", "upgraded": null,
+      "tier": 2, "faction": "necropolis",
+      "attack": 5, "defense": 5, "min_damage": 2, "max_damage": 4,
+      "hp": 20, "speed": 4, "initiative": 8, "growth": 11, "ai_value": 128,
+      "cost": {"gold": 90}, "abilities": ["undead", "no_morale", "disease_strong"],
+      "description": "Powerful rotting zombies.",
+      "color": [170, 190, 150]
+    },
+    {
+      "id": "wight", "name": "Wight", "upgraded": "wraith",
+      "tier": 3, "faction": "necropolis",
+      "attack": 7, "defense": 7, "min_damage": 3, "max_damage": 5,
+      "hp": 18, "speed": 5, "initiative": 10, "growth": 8, "ai_value": 222,
+      "cost": {"gold": 200}, "abilities": ["undead", "no_morale", "flying", "drain_life"],
+      "description": "Spectral wights that drain life energy.",
+      "color": [180, 180, 220]
+    },
+    {
+      "id": "wraith", "name": "Wraith", "upgraded": null,
+      "tier": 3, "faction": "necropolis",
+      "attack": 7, "defense": 7, "min_damage": 3, "max_damage": 5,
+      "hp": 18, "speed": 7, "initiative": 10, "growth": 8, "ai_value": 295,
+      "cost": {"gold": 250}, "abilities": ["undead", "no_morale", "flying", "drain_mana"],
+      "description": "Wraiths that drain enemy mana.",
+      "color": [200, 200, 240]
+    },
+    {
+      "id": "vampire", "name": "Vampire", "upgraded": "vampire_lord",
+      "tier": 4, "faction": "necropolis",
+      "attack": 10, "defense": 10, "min_damage": 5, "max_damage": 8,
+      "hp": 30, "speed": 6, "initiative": 12, "growth": 4, "ai_value": 555,
+      "cost": {"gold": 360}, "abilities": ["undead", "no_morale", "flying", "no_enemy_retaliation"],
+      "description": "Vampires who attack without retaliation.",
+      "color": [160, 80, 120]
+    },
+    {
+      "id": "vampire_lord", "name": "Vampire Lord", "upgraded": null,
+      "tier": 4, "faction": "necropolis",
+      "attack": 10, "defense": 10, "min_damage": 5, "max_damage": 8,
+      "hp": 40, "speed": 9, "initiative": 12, "growth": 4, "ai_value": 783,
+      "cost": {"gold": 500}, "abilities": ["undead", "no_morale", "flying", "no_enemy_retaliation", "life_drain"],
+      "description": "Vampire lords who heal by draining life.",
+      "color": [200, 100, 140]
+    },
+    {
+      "id": "lich", "name": "Lich", "upgraded": "power_lich",
+      "tier": 5, "faction": "necropolis",
+      "attack": 13, "defense": 10, "min_damage": 13, "max_damage": 17,
+      "hp": 30, "speed": 6, "initiative": 13, "growth": 3, "ai_value": 848,
+      "cost": {"gold": 550}, "abilities": ["undead", "no_morale", "ranged", "cloud_of_death"],
+      "description": "Undead liches who shoot death clouds.",
+      "color": [140, 120, 180]
+    },
+    {
+      "id": "power_lich", "name": "Power Lich", "upgraded": null,
+      "tier": 5, "faction": "necropolis",
+      "attack": 13, "defense": 10, "min_damage": 13, "max_damage": 17,
+      "hp": 40, "speed": 8, "initiative": 13, "growth": 3, "ai_value": 1079,
+      "cost": {"gold": 750, "sulfur": 1}, "abilities": ["undead", "no_morale", "ranged", "cloud_of_death_strong"],
+      "description": "Power liches with stronger death clouds.",
+      "color": [160, 140, 200]
+    },
+    {
+      "id": "black_knight", "name": "Black Knight", "upgraded": "dread_knight",
+      "tier": 6, "faction": "necropolis",
+      "attack": 16, "defense": 16, "min_damage": 15, "max_damage": 30,
+      "hp": 120, "speed": 7, "initiative": 13, "growth": 2, "ai_value": 2087,
+      "cost": {"gold": 1800}, "abilities": ["undead", "no_morale", "curse_on_hit"],
+      "description": "Black knights who curse enemies.",
+      "color": [60, 60, 80]
+    },
+    {
+      "id": "dread_knight", "name": "Dread Knight", "upgraded": null,
+      "tier": 6, "faction": "necropolis",
+      "attack": 18, "defense": 18, "min_damage": 15, "max_damage": 30,
+      "hp": 130, "speed": 9, "initiative": 13, "growth": 2, "ai_value": 2666,
+      "cost": {"gold": 2000, "mercury": 1}, "abilities": ["undead", "no_morale", "double_strike", "curse_on_hit"],
+      "description": "Dread knights with double strike.",
+      "color": [80, 80, 100]
+    },
+    {
+      "id": "bone_dragon", "name": "Bone Dragon", "upgraded": "ghost_dragon",
+      "tier": 7, "faction": "necropolis",
+      "attack": 17, "defense": 15, "min_damage": 25, "max_damage": 50,
+      "hp": 150, "speed": 13, "initiative": 17, "growth": 1, "ai_value": 3887,
+      "cost": {"gold": 3000}, "abilities": ["undead", "no_morale", "flying", "age_penalty"],
+      "description": "Undead bone dragons that age enemies.",
+      "color": [180, 180, 160]
+    },
+    {
+      "id": "ghost_dragon", "name": "Ghost Dragon", "upgraded": null,
+      "tier": 7, "faction": "necropolis",
+      "attack": 19, "defense": 17, "min_damage": 25, "max_damage": 50,
+      "hp": 200, "speed": 14, "initiative": 17, "growth": 1, "ai_value": 4696,
+      "cost": {"gold": 4000, "sulfur": 1}, "abilities": ["undead", "no_morale", "flying", "age_attack"],
+      "description": "Ghost dragons who age their victims.",
+      "color": [200, 200, 190]
+    }
+  ],
+  "dungeon": [
+    {
+      "id": "troglodyte", "name": "Troglodyte", "upgraded": "infernal_troglodyte",
+      "tier": 1, "faction": "dungeon",
+      "attack": 4, "defense": 3, "min_damage": 1, "max_damage": 3,
+      "hp": 5, "speed": 4, "initiative": 9, "growth": 18, "ai_value": 59,
+      "cost": {"gold": 50}, "abilities": ["blind_immunity"],
+      "description": "Cave-dwelling troglodytes immune to blindness.",
+      "color": [140, 120, 100]
+    },
+    {
+      "id": "infernal_troglodyte", "name": "Infernal Troglodyte", "upgraded": null,
+      "tier": 1, "faction": "dungeon",
+      "attack": 5, "defense": 4, "min_damage": 2, "max_damage": 4,
+      "hp": 7, "speed": 5, "initiative": 9, "growth": 18, "ai_value": 84,
+      "cost": {"gold": 65}, "abilities": ["blind_immunity"],
+      "description": "Infernal troglodytes.",
+      "color": [160, 140, 120]
+    },
+    {
+      "id": "harpy", "name": "Harpy", "upgraded": "harpy_hag",
+      "tier": 2, "faction": "dungeon",
+      "attack": 6, "defense": 5, "min_damage": 2, "max_damage": 4,
+      "hp": 14, "speed": 6, "initiative": 11, "growth": 9, "ai_value": 154,
+      "cost": {"gold": 100}, "abilities": ["flying"],
+      "description": "Flying harpy creatures.",
+      "color": [180, 160, 140]
+    },
+    {
+      "id": "harpy_hag", "name": "Harpy Hag", "upgraded": null,
+      "tier": 2, "faction": "dungeon",
+      "attack": 7, "defense": 7, "min_damage": 2, "max_damage": 4,
+      "hp": 14, "speed": 7, "initiative": 11, "growth": 9, "ai_value": 238,
+      "cost": {"gold": 150}, "abilities": ["flying", "return_after_attack"],
+      "description": "Harpy hags who return after attacking.",
+      "color": [200, 180, 160]
+    },
+    {
+      "id": "beholder", "name": "Beholder", "upgraded": "evil_eye",
+      "tier": 3, "faction": "dungeon",
+      "attack": 8, "defense": 7, "min_damage": 4, "max_damage": 6,
+      "hp": 20, "speed": 6, "initiative": 13, "growth": 6, "ai_value": 336,
+      "cost": {"gold": 200}, "abilities": ["ranged"],
+      "description": "Many-eyed beholders.",
+      "color": [200, 180, 100]
+    },
+    {
+      "id": "evil_eye", "name": "Evil Eye", "upgraded": null,
+      "tier": 3, "faction": "dungeon",
+      "attack": 9, "defense": 8, "min_damage": 4, "max_damage": 7,
+      "hp": 20, "speed": 8, "initiative": 13, "growth": 6, "ai_value": 427,
+      "cost": {"gold": 250}, "abilities": ["ranged", "petrify_chance"],
+      "description": "Evil eyes that can petrify enemies.",
+      "color": [220, 200, 120]
+    },
+    {
+      "id": "medusa", "name": "Medusa", "upgraded": "medusa_queen",
+      "tier": 4, "faction": "dungeon",
+      "attack": 11, "defense": 9, "min_damage": 6, "max_damage": 9,
+      "hp": 35, "speed": 5, "initiative": 12, "growth": 4, "ai_value": 517,
+      "cost": {"gold": 330}, "abilities": ["ranged", "petrify_attack"],
+      "description": "Medusas who can petrify their foes.",
+      "color": [160, 180, 160]
+    },
+    {
+      "id": "medusa_queen", "name": "Medusa Queen", "upgraded": null,
+      "tier": 4, "faction": "dungeon",
+      "attack": 13, "defense": 9, "min_damage": 6, "max_damage": 9,
+      "hp": 35, "speed": 7, "initiative": 12, "growth": 4, "ai_value": 671,
+      "cost": {"gold": 450}, "abilities": ["ranged", "petrify_attack_strong"],
+      "description": "Medusa queens with stronger petrification.",
+      "color": [180, 200, 180]
+    },
+    {
+      "id": "minotaur", "name": "Minotaur", "upgraded": "minotaur_king",
+      "tier": 5, "faction": "dungeon",
+      "attack": 15, "defense": 15, "min_damage": 12, "max_damage": 20,
+      "hp": 50, "speed": 6, "initiative": 11, "growth": 3, "ai_value": 835,
+      "cost": {"gold": 500}, "abilities": [],
+      "description": "Mighty minotaurs of the labyrinth.",
+      "color": [160, 100, 60]
+    },
+    {
+      "id": "minotaur_king", "name": "Minotaur King", "upgraded": null,
+      "tier": 5, "faction": "dungeon",
+      "attack": 17, "defense": 15, "min_damage": 12, "max_damage": 20,
+      "hp": 60, "speed": 8, "initiative": 11, "growth": 3, "ai_value": 1063,
+      "cost": {"gold": 650}, "abilities": ["morale_boost"],
+      "description": "Minotaur kings who boost allied morale.",
+      "color": [180, 120, 80]
+    },
+    {
+      "id": "manticore", "name": "Manticore", "upgraded": "scorpicore",
+      "tier": 6, "faction": "dungeon",
+      "attack": 15, "defense": 13, "min_damage": 14, "max_damage": 20,
+      "hp": 90, "speed": 8, "initiative": 12, "growth": 2, "ai_value": 1547,
+      "cost": {"gold": 1400}, "abilities": ["flying"],
+      "description": "Fearsome flying manticores.",
+      "color": [180, 120, 100]
+    },
+    {
+      "id": "scorpicore", "name": "Scorpicore", "upgraded": null,
+      "tier": 6, "faction": "dungeon",
+      "attack": 17, "defense": 15, "min_damage": 14, "max_damage": 20,
+      "hp": 100, "speed": 10, "initiative": 12, "growth": 2, "ai_value": 2098,
+      "cost": {"gold": 1800, "mercury": 1}, "abilities": ["flying", "paralyzing_sting"],
+      "description": "Scorpicores with paralyzing stingers.",
+      "color": [200, 140, 120]
+    },
+    {
+      "id": "red_dragon", "name": "Red Dragon", "upgraded": "black_dragon",
+      "tier": 7, "faction": "dungeon",
+      "attack": 19, "defense": 19, "min_damage": 25, "max_damage": 50,
+      "hp": 200, "speed": 13, "initiative": 17, "growth": 1, "ai_value": 6600,
+      "cost": {"gold": 3000, "sulfur": 2}, "abilities": ["flying", "breath_attack", "immune_fire"],
+      "description": "Ancient red dragons immune to fire.",
+      "color": [220, 60, 40]
+    },
+    {
+      "id": "black_dragon", "name": "Black Dragon", "upgraded": null,
+      "tier": 7, "faction": "dungeon",
+      "attack": 27, "defense": 27, "min_damage": 25, "max_damage": 50,
+      "hp": 300, "speed": 16, "initiative": 19, "growth": 1, "ai_value": 12985,
+      "cost": {"gold": 4000, "sulfur": 2}, "abilities": ["flying", "breath_attack", "immune_to_magic_all"],
+      "description": "Black dragons immune to all magic.",
+      "color": [40, 40, 60]
+    }
+  ],
+  "stronghold": [
+    {
+      "id": "goblin", "name": "Goblin", "upgraded": "hobgoblin",
+      "tier": 1, "faction": "stronghold",
+      "attack": 3, "defense": 4, "min_damage": 1, "max_damage": 2,
+      "hp": 5, "speed": 5, "initiative": 11, "growth": 20, "ai_value": 60,
+      "cost": {"gold": 40}, "abilities": [],
+      "description": "Small but numerous goblins.",
+      "color": [120, 160, 80]
+    },
+    {
+      "id": "hobgoblin", "name": "Hobgoblin", "upgraded": null,
+      "tier": 1, "faction": "stronghold",
+      "attack": 5, "defense": 4, "min_damage": 1, "max_damage": 3,
+      "hp": 5, "speed": 6, "initiative": 11, "growth": 20, "ai_value": 78,
+      "cost": {"gold": 50}, "abilities": ["no_penalty"],
+      "description": "Hobgoblins with no movement penalties.",
+      "color": [140, 180, 100]
+    },
+    {
+      "id": "wolf_rider", "name": "Wolf Rider", "upgraded": "wolf_raider",
+      "tier": 2, "faction": "stronghold",
+      "attack": 7, "defense": 5, "min_damage": 1, "max_damage": 3,
+      "hp": 18, "speed": 7, "initiative": 11, "growth": 9, "ai_value": 130,
+      "cost": {"gold": 100}, "abilities": ["double_attack"],
+      "description": "Goblins riding wolves with double attack.",
+      "color": [160, 120, 80]
+    },
+    {
+      "id": "wolf_raider", "name": "Wolf Raider", "upgraded": null,
+      "tier": 2, "faction": "stronghold",
+      "attack": 8, "defense": 5, "min_damage": 2, "max_damage": 4,
+      "hp": 20, "speed": 9, "initiative": 11, "growth": 9, "ai_value": 208,
+      "cost": {"gold": 150}, "abilities": ["double_attack"],
+      "description": "Swift wolf raiders.",
+      "color": [180, 140, 100]
+    },
+    {
+      "id": "orc", "name": "Orc", "upgraded": "orc_chieftain",
+      "tier": 3, "faction": "stronghold",
+      "attack": 9, "defense": 4, "min_damage": 3, "max_damage": 5,
+      "hp": 20, "speed": 4, "initiative": 9, "growth": 7, "ai_value": 175,
+      "cost": {"gold": 150}, "abilities": ["ranged"],
+      "description": "Orcish warriors armed with bows.",
+      "color": [100, 140, 60]
+    },
+    {
+      "id": "orc_chieftain", "name": "Orc Chieftain", "upgraded": null,
+      "tier": 3, "faction": "stronghold",
+      "attack": 10, "defense": 5, "min_damage": 3, "max_damage": 5,
+      "hp": 25, "speed": 5, "initiative": 9, "growth": 7, "ai_value": 246,
+      "cost": {"gold": 200}, "abilities": ["ranged", "wolf_rider_aura"],
+      "description": "Orc chieftains who boost wolf riders.",
+      "color": [120, 160, 80]
+    },
+    {
+      "id": "ogre", "name": "Ogre", "upgraded": "ogre_mage",
+      "tier": 4, "faction": "stronghold",
+      "attack": 13, "defense": 7, "min_damage": 7, "max_damage": 14,
+      "hp": 55, "speed": 5, "initiative": 11, "growth": 4, "ai_value": 416,
+      "cost": {"gold": 300}, "abilities": [],
+      "description": "Massive ogres of immense strength.",
+      "color": [180, 140, 100]
+    },
+    {
+      "id": "ogre_mage", "name": "Ogre Mage", "upgraded": null,
+      "tier": 4, "faction": "stronghold",
+      "attack": 13, "defense": 7, "min_damage": 7, "max_damage": 14,
+      "hp": 55, "speed": 6, "initiative": 11, "growth": 4, "ai_value": 520,
+      "cost": {"gold": 400}, "abilities": ["bloodlust_cast"],
+      "description": "Ogre mages who cast bloodlust on allies.",
+      "color": [200, 160, 120]
+    },
+    {
+      "id": "roc", "name": "Roc", "upgraded": "thunderbird",
+      "tier": 5, "faction": "stronghold",
+      "attack": 13, "defense": 11, "min_damage": 11, "max_damage": 19,
+      "hp": 60, "speed": 10, "initiative": 12, "growth": 3, "ai_value": 1027,
+      "cost": {"gold": 600, "wood": 1}, "abilities": ["flying"],
+      "description": "Giant rocs from the mountains.",
+      "color": [180, 160, 140]
+    },
+    {
+      "id": "thunderbird", "name": "Thunderbird", "upgraded": null,
+      "tier": 5, "faction": "stronghold",
+      "attack": 13, "defense": 11, "min_damage": 11, "max_damage": 19,
+      "hp": 70, "speed": 13, "initiative": 12, "growth": 3, "ai_value": 1241,
+      "cost": {"gold": 700, "wood": 1}, "abilities": ["flying", "lightning_strike"],
+      "description": "Thunderbirds who call lightning.",
+      "color": [200, 180, 240]
+    },
+    {
+      "id": "cyclops", "name": "Cyclops", "upgraded": "cyclops_king",
+      "tier": 6, "faction": "stronghold",
+      "attack": 17, "defense": 13, "min_damage": 16, "max_damage": 20,
+      "hp": 90, "speed": 7, "initiative": 11, "growth": 2, "ai_value": 1690,
+      "cost": {"gold": 1500}, "abilities": ["ranged", "siege_bonus"],
+      "description": "One-eyed cyclops giants.",
+      "color": [200, 160, 120]
+    },
+    {
+      "id": "cyclops_king", "name": "Cyclops King", "upgraded": null,
+      "tier": 6, "faction": "stronghold",
+      "attack": 19, "defense": 13, "min_damage": 16, "max_damage": 20,
+      "hp": 100, "speed": 9, "initiative": 11, "growth": 2, "ai_value": 2226,
+      "cost": {"gold": 2000, "crystal": 1}, "abilities": ["ranged", "siege_bonus_strong"],
+      "description": "Powerful cyclops kings.",
+      "color": [220, 180, 140]
+    },
+    {
+      "id": "behemoth", "name": "Behemoth", "upgraded": "ancient_behemoth",
+      "tier": 7, "faction": "stronghold",
+      "attack": 17, "defense": 17, "min_damage": 40, "max_damage": 80,
+      "hp": 300, "speed": 7, "initiative": 14, "growth": 1, "ai_value": 8372,
+      "cost": {"gold": 3000}, "abilities": ["reduce_defense"],
+      "description": "Massive behemoths who reduce enemy defense.",
+      "color": [160, 120, 80]
+    },
+    {
+      "id": "ancient_behemoth", "name": "Ancient Behemoth", "upgraded": null,
+      "tier": 7, "faction": "stronghold",
+      "attack": 19, "defense": 19, "min_damage": 40, "max_damage": 80,
+      "hp": 400, "speed": 10, "initiative": 14, "growth": 1, "ai_value": 11551,
+      "cost": {"gold": 5000}, "abilities": ["reduce_defense_strong"],
+      "description": "Ancient behemoths of legendary power.",
+      "color": [180, 140, 100]
+    }
+  ],
+  "fortress": [
+    {
+      "id": "gnoll", "name": "Gnoll", "upgraded": "gnoll_marauder",
+      "tier": 1, "faction": "fortress",
+      "attack": 4, "defense": 5, "min_damage": 2, "max_damage": 3,
+      "hp": 6, "speed": 5, "initiative": 8, "growth": 14, "ai_value": 56,
+      "cost": {"gold": 50}, "abilities": [],
+      "description": "Gnoll warriors of the fortress.",
+      "color": [160, 140, 100]
+    },
+    {
+      "id": "gnoll_marauder", "name": "Gnoll Marauder", "upgraded": null,
+      "tier": 1, "faction": "fortress",
+      "attack": 6, "defense": 5, "min_damage": 2, "max_damage": 4,
+      "hp": 8, "speed": 6, "initiative": 8, "growth": 14, "ai_value": 90,
+      "cost": {"gold": 65}, "abilities": ["counter_attack"],
+      "description": "Gnoll marauders skilled at counter-attacks.",
+      "color": [180, 160, 120]
+    },
+    {
+      "id": "lizardman", "name": "Lizardman", "upgraded": "lizard_warrior",
+      "tier": 2, "faction": "fortress",
+      "attack": 6, "defense": 6, "min_damage": 2, "max_damage": 5,
+      "hp": 14, "speed": 4, "initiative": 9, "growth": 9, "ai_value": 126,
+      "cost": {"gold": 100}, "abilities": ["ranged"],
+      "description": "Reptilian lizardmen.",
+      "color": [100, 160, 80]
+    },
+    {
+      "id": "lizard_warrior", "name": "Lizard Warrior", "upgraded": null,
+      "tier": 2, "faction": "fortress",
+      "attack": 7, "defense": 7, "min_damage": 2, "max_damage": 5,
+      "hp": 18, "speed": 5, "initiative": 9, "growth": 9, "ai_value": 168,
+      "cost": {"gold": 130}, "abilities": ["ranged"],
+      "description": "Veteran lizard warriors.",
+      "color": [120, 180, 100]
+    },
+    {
+      "id": "serpent_fly", "name": "Serpent Fly", "upgraded": "dragon_fly",
+      "tier": 3, "faction": "fortress",
+      "attack": 9, "defense": 9, "min_damage": 2, "max_damage": 5,
+      "hp": 15, "speed": 9, "initiative": 14, "growth": 7, "ai_value": 268,
+      "cost": {"gold": 200}, "abilities": ["flying", "dispel_on_attack"],
+      "description": "Serpent flies that dispel enemy buffs.",
+      "color": [160, 200, 120]
+    },
+    {
+      "id": "dragon_fly", "name": "Dragon Fly", "upgraded": null,
+      "tier": 3, "faction": "fortress",
+      "attack": 10, "defense": 10, "min_damage": 2, "max_damage": 5,
+      "hp": 20, "speed": 13, "initiative": 14, "growth": 7, "ai_value": 360,
+      "cost": {"gold": 240}, "abilities": ["flying", "dispel_on_attack_strong"],
+      "description": "Swift dragon flies.",
+      "color": [180, 220, 140]
+    },
+    {
+      "id": "basilisk", "name": "Basilisk", "upgraded": "greater_basilisk",
+      "tier": 4, "faction": "fortress",
+      "attack": 10, "defense": 10, "min_damage": 5, "max_damage": 8,
+      "hp": 45, "speed": 6, "initiative": 10, "growth": 4, "ai_value": 480,
+      "cost": {"gold": 350}, "abilities": ["petrify_attack"],
+      "description": "Stone-gazing basilisks.",
+      "color": [140, 160, 80]
+    },
+    {
+      "id": "greater_basilisk", "name": "Greater Basilisk", "upgraded": null,
+      "tier": 4, "faction": "fortress",
+      "attack": 11, "defense": 11, "min_damage": 5, "max_damage": 9,
+      "hp": 55, "speed": 7, "initiative": 10, "growth": 4, "ai_value": 600,
+      "cost": {"gold": 450}, "abilities": ["petrify_attack"],
+      "description": "Greater basilisks with stronger petrification.",
+      "color": [160, 180, 100]
+    },
+    {
+      "id": "gorgon", "name": "Gorgon", "upgraded": "mighty_gorgon",
+      "tier": 5, "faction": "fortress",
+      "attack": 10, "defense": 14, "min_damage": 12, "max_damage": 20,
+      "hp": 70, "speed": 5, "initiative": 10, "growth": 3, "ai_value": 890,
+      "cost": {"gold": 600}, "abilities": ["death_stare"],
+      "description": "Gorgons with a deadly death stare.",
+      "color": [80, 120, 80]
+    },
+    {
+      "id": "mighty_gorgon", "name": "Mighty Gorgon", "upgraded": null,
+      "tier": 5, "faction": "fortress",
+      "attack": 11, "defense": 15, "min_damage": 12, "max_damage": 20,
+      "hp": 80, "speed": 6, "initiative": 10, "growth": 3, "ai_value": 1070,
+      "cost": {"gold": 800}, "abilities": ["death_stare_strong"],
+      "description": "Mighty gorgons with enhanced death stare.",
+      "color": [100, 140, 100]
+    },
+    {
+      "id": "wyvern", "name": "Wyvern", "upgraded": "wyvern_monarch",
+      "tier": 6, "faction": "fortress",
+      "attack": 15, "defense": 15, "min_damage": 14, "max_damage": 17,
+      "hp": 90, "speed": 9, "initiative": 12, "growth": 2, "ai_value": 1642,
+      "cost": {"gold": 1200}, "abilities": ["flying"],
+      "description": "Fearsome wyverns.",
+      "color": [120, 160, 80]
+    },
+    {
+      "id": "wyvern_monarch", "name": "Wyvern Monarch", "upgraded": null,
+      "tier": 6, "faction": "fortress",
+      "attack": 15, "defense": 15, "min_damage": 14, "max_damage": 17,
+      "hp": 110, "speed": 11, "initiative": 12, "growth": 2, "ai_value": 1990,
+      "cost": {"gold": 1600, "sulfur": 1}, "abilities": ["flying", "poison_attack"],
+      "description": "Wyvern monarchs with poison attacks.",
+      "color": [140, 180, 100]
+    },
+    {
+      "id": "hydra", "name": "Hydra", "upgraded": "chaos_hydra",
+      "tier": 7, "faction": "fortress",
+      "attack": 16, "defense": 16, "min_damage": 20, "max_damage": 40,
+      "hp": 250, "speed": 5, "initiative": 12, "growth": 1, "ai_value": 4834,
+      "cost": {"gold": 3500}, "abilities": ["multi_hex_attack", "no_enemy_retaliation"],
+      "description": "Multi-headed hydras who attack entire rows.",
+      "color": [80, 140, 80]
+    },
+    {
+      "id": "chaos_hydra", "name": "Chaos Hydra", "upgraded": null,
+      "tier": 7, "faction": "fortress",
+      "attack": 18, "defense": 18, "min_damage": 20, "max_damage": 40,
+      "hp": 350, "speed": 6, "initiative": 12, "growth": 1, "ai_value": 7615,
+      "cost": {"gold": 5000, "mercury": 1}, "abilities": ["multi_hex_attack", "no_enemy_retaliation", "regeneration"],
+      "description": "Chaos hydras with regeneration.",
+      "color": [100, 160, 100]
+    }
+  ],
+  "conflux": [
+    {
+      "id": "pixie", "name": "Pixie", "upgraded": "sprite",
+      "tier": 1, "faction": "conflux",
+      "attack": 3, "defense": 4, "min_damage": 1, "max_damage": 3,
+      "hp": 3, "speed": 6, "initiative": 15, "growth": 25, "ai_value": 55,
+      "cost": {"gold": 25}, "abilities": ["flying", "no_enemy_retaliation"],
+      "description": "Tiny pixies immune from retaliation.",
+      "color": [200, 180, 255]
+    },
+    {
+      "id": "sprite", "name": "Sprite", "upgraded": null,
+      "tier": 1, "faction": "conflux",
+      "attack": 4, "defense": 4, "min_damage": 1, "max_damage": 3,
+      "hp": 3, "speed": 9, "initiative": 15, "growth": 25, "ai_value": 68,
+      "cost": {"gold": 30}, "abilities": ["flying", "no_enemy_retaliation", "poison_touch"],
+      "description": "Sprites with poisonous touch.",
+      "color": [220, 200, 255]
+    },
+    {
+      "id": "air_elemental", "name": "Air Elemental", "upgraded": "storm_elemental",
+      "tier": 2, "faction": "conflux",
+      "attack": 7, "defense": 7, "min_damage": 2, "max_damage": 8,
+      "hp": 18, "speed": 7, "initiative": 14, "growth": 8, "ai_value": 216,
+      "cost": {"gold": 150}, "abilities": ["flying", "no_morale", "immune_air"],
+      "description": "Elemental beings of air.",
+      "color": [200, 220, 255]
+    },
+    {
+      "id": "storm_elemental", "name": "Storm Elemental", "upgraded": null,
+      "tier": 2, "faction": "conflux",
+      "attack": 8, "defense": 8, "min_damage": 2, "max_damage": 8,
+      "hp": 22, "speed": 9, "initiative": 14, "growth": 8, "ai_value": 280,
+      "cost": {"gold": 200}, "abilities": ["flying", "no_morale", "immune_air", "lightning_strike"],
+      "description": "Powerful storm elementals.",
+      "color": [180, 200, 255]
+    },
+    {
+      "id": "water_elemental", "name": "Water Elemental", "upgraded": "ice_elemental",
+      "tier": 3, "faction": "conflux",
+      "attack": 9, "defense": 9, "min_damage": 4, "max_damage": 6,
+      "hp": 22, "speed": 6, "initiative": 10, "growth": 6, "ai_value": 258,
+      "cost": {"gold": 175}, "abilities": ["no_morale", "immune_water", "immune_ice"],
+      "description": "Elemental beings of water.",
+      "color": [120, 160, 220]
+    },
+    {
+      "id": "ice_elemental", "name": "Ice Elemental", "upgraded": null,
+      "tier": 3, "faction": "conflux",
+      "attack": 9, "defense": 9, "min_damage": 4, "max_damage": 6,
+      "hp": 22, "speed": 7, "initiative": 10, "growth": 6, "ai_value": 314,
+      "cost": {"gold": 225}, "abilities": ["no_morale", "immune_water", "immune_ice", "frost_attack"],
+      "description": "Ice elementals with frost attacks.",
+      "color": [160, 200, 255]
+    },
+    {
+      "id": "fire_elemental", "name": "Fire Elemental", "upgraded": "energy_elemental",
+      "tier": 4, "faction": "conflux",
+      "attack": 10, "defense": 10, "min_damage": 5, "max_damage": 7,
+      "hp": 25, "speed": 7, "initiative": 13, "growth": 5, "ai_value": 345,
+      "cost": {"gold": 220}, "abilities": ["no_morale", "immune_fire"],
+      "description": "Blazing fire elementals.",
+      "color": [255, 160, 80]
+    },
+    {
+      "id": "energy_elemental", "name": "Energy Elemental", "upgraded": null,
+      "tier": 4, "faction": "conflux",
+      "attack": 11, "defense": 11, "min_damage": 5, "max_damage": 7,
+      "hp": 25, "speed": 9, "initiative": 13, "growth": 5, "ai_value": 427,
+      "cost": {"gold": 280}, "abilities": ["no_morale", "immune_fire", "fire_aura"],
+      "description": "Energy elementals with burning auras.",
+      "color": [255, 200, 100]
+    },
+    {
+      "id": "earth_elemental", "name": "Earth Elemental", "upgraded": "magma_elemental",
+      "tier": 5, "faction": "conflux",
+      "attack": 11, "defense": 11, "min_damage": 12, "max_damage": 16,
+      "hp": 50, "speed": 4, "initiative": 9, "growth": 4, "ai_value": 530,
+      "cost": {"gold": 300}, "abilities": ["no_morale", "immune_earth", "75pct_spell_damage"],
+      "description": "Stalwart earth elementals.",
+      "color": [160, 140, 80]
+    },
+    {
+      "id": "magma_elemental", "name": "Magma Elemental", "upgraded": null,
+      "tier": 5, "faction": "conflux",
+      "attack": 13, "defense": 13, "min_damage": 12, "max_damage": 16,
+      "hp": 60, "speed": 5, "initiative": 9, "growth": 4, "ai_value": 706,
+      "cost": {"gold": 400}, "abilities": ["no_morale", "immune_earth", "immune_fire", "50pct_spell_damage"],
+      "description": "Magma elementals combining earth and fire.",
+      "color": [200, 120, 60]
+    },
+    {
+      "id": "psychic_elemental", "name": "Psychic Elemental", "upgraded": "magic_elemental",
+      "tier": 6, "faction": "conflux",
+      "attack": 14, "defense": 14, "min_damage": 30, "max_damage": 40,
+      "hp": 80, "speed": 8, "initiative": 12, "growth": 2, "ai_value": 1920,
+      "cost": {"gold": 800, "crystal": 1}, "abilities": ["flying", "immune_to_mind", "no_melee_penalty"],
+      "description": "Psychic elementals who attack minds.",
+      "color": [200, 160, 255]
+    },
+    {
+      "id": "magic_elemental", "name": "Magic Elemental", "upgraded": null,
+      "tier": 6, "faction": "conflux",
+      "attack": 14, "defense": 14, "min_damage": 30, "max_damage": 40,
+      "hp": 100, "speed": 10, "initiative": 12, "growth": 2, "ai_value": 2400,
+      "cost": {"gold": 1000, "crystal": 2}, "abilities": ["flying", "immune_to_magic_all", "no_melee_penalty"],
+      "description": "Pure magic elementals immune to all magic.",
+      "color": [220, 180, 255]
+    },
+    {
+      "id": "firebird", "name": "Firebird", "upgraded": "phoenix",
+      "tier": 7, "faction": "conflux",
+      "attack": 21, "defense": 21, "min_damage": 30, "max_damage": 40,
+      "hp": 200, "speed": 15, "initiative": 21, "growth": 1, "ai_value": 8222,
+      "cost": {"gold": 4000, "mercury": 1}, "abilities": ["flying", "immune_fire", "fire_shield"],
+      "description": "The mighty firebird.",
+      "color": [255, 180, 60]
+    },
+    {
+      "id": "phoenix", "name": "Phoenix", "upgraded": null,
+      "tier": 7, "faction": "conflux",
+      "attack": 21, "defense": 21, "min_damage": 40, "max_damage": 60,
+      "hp": 250, "speed": 20, "initiative": 23, "growth": 1, "ai_value": 10000,
+      "cost": {"gold": 5000, "mercury": 2}, "abilities": ["flying", "immune_fire", "fire_shield", "rebirth"],
+      "description": "The immortal phoenix who can be reborn.",
+      "color": [255, 200, 100]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+heroes_hd/__pycache__/
+heroes_hd/**/__pycache__/
+heroes_hd/**/*.pyc
+*.pyc
+__pycache__/
